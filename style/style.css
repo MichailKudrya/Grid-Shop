@@ -1,32 +1,135 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: darkgrey;
 }
-html, body {
+
+html,
+body {
     height: 100%;
+
 }
 
 .wrapper {
     height: 100%;
     display: grid;
     grid-template-columns: 252px auto;
+    margin: 0 150px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(42px);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.logo {
+    max-width: 110px;
+    height: auto;
+    margin: 51px 70px 57px 56px;
+}
+h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.sidebar_ul {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+    padding-left: 0;
+    gap: 33px;
+    list-style: none;
+}
+li {
+    font-weight: 500;
+    font-size: 15.7099px;
+    line-height: 19px;
+    padding-left: 33px;
+}
+.sidebar_li1 {
+    background: url(../img/icons/newin.png) left no-repeat;
+}
+
+.sidebar_li2 {
+    background: url(../img/icons/clothes.png) left no-repeat;
+}
+
+.sidebar_li3 {
+    background: url(../img/icons/shoes.png) left no-repeat;
+}
+
+.sidebar_li4 {
+    background: url(../img/icons/bag.png) left no-repeat;
+}
+.sidebar_li5 {
+    background: url(../img/icons/sport.png) left no-repeat;
+}
+.sidebar_li6 {
+    background: url(../img/icons/gifts.png) left no-repeat;
+}
+.sidebar_li7 {
+    background: url(../img/icons/brilliant.png) left no-repeat;
 }
 .content {
     display: grid;
     max-width: 1099px;
     grid-template-rows: 123px auto;
 }
-.nav {
-
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.header_nav {
+    text-decoration: none;
+}
+.nav_ul {
+    display: flex;
+    list-style: none;
+    padding-right: 12px;
+    gap: 24px;
+}
+.nav_li {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    padding: 8px;
+    border-bottom: 2px solid transparent;
+}
+.nav_li:hover {
+    border-bottom: 2px solid #000;
+}
+.icons {
+    display: flex;
+    padding-right: 56px;
+    gap: 20px
+}
+.icons1 {
+    max-width: 20px;
+    max-height: 20px;
+}
+.icons2 {
+    max-width: 16px;
+    max-height: 16px;
 }
 .image {
     padding: 20px;
     display: grid;
     gap: 20px;
-    grid-template-areas: 
+    grid-template-areas:
         "w1 w1 img1 img2"
         "w2 w2 img1 img2"
         "img3 img4 w3 w3"
@@ -41,31 +144,24 @@ img {
 .content-img_w1 {
     grid-area: w1;
 }
-
 .content-img_w2 {
     grid-area: w2;
 }
-
 .content-img1 {
     grid-area: img1;
 }
-
 .content-img2 {
     grid-area: img2;
 }
-
 .content-img3 {
     grid-area: img3;
 }
-
 .content-img4 {
     grid-area: img4;
 }
-
 .content-img_w3 {
     grid-area: w3;
 }
-
 .content-img_w4 {
     grid-area: w4;
 }
