@@ -3,9 +3,11 @@
 }
 
 body {
+    height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: darkgrey;
+    max-height: 2000px;
 }
 
 html,
@@ -16,6 +18,7 @@ body {
 
 .wrapper {
     height: 100%;
+    max-width: 1440px;
     display: grid;
     grid-template-columns: 252px auto;
     margin: 0 150px;
@@ -164,4 +167,38 @@ img {
 }
 .content-img_w4 {
     grid-area: w4;
+}
+@media (max-width:1200px) {
+    .wrapper {
+        margin: 5px 30px;
+    }
+}
+@media (max-width:992px) {
+    .image {
+        grid-template-areas:
+        "w1 w1"
+        "w2 w2"
+        "img1 img2"
+        "img1 img2"
+        "img3 img4"
+        "img3 img4"
+        "w3 w3"
+        "w4 w4";
+    }
+    .header {
+        display: none;
+    }
+    .sidebar {
+        height: 100%;
+    }
+    .sidebar {
+        height: 100%;
+    }
+    .content {
+        height: 100%;
+    }
+    .wrapper {
+        max-height: 2000px;
+    }
+
 }
