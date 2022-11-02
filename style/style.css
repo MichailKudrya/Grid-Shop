@@ -185,6 +185,9 @@ img {
         "w3 w3"
         "w4 w4";
     }
+    body {
+        background-color: #fff;
+    }
     .header {
         display: none;
     }
@@ -196,9 +199,15 @@ img {
     }
     .content {
         height: 100%;
+        
     }
     .wrapper {
-        max-height: 2000px;
+        grid-auto-rows: minmax(150px, auto);
+    }
+    @media (max-width:700px) {
+        .wrapper {
+        grid-template-columns: 30% 70%;
+        }
     }
 
 }
