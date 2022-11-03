@@ -143,6 +143,12 @@ img {
     width: 100%;
     border-radius: 15px;
     object-fit: cover;
+    transition: .2s all ease-in-out;
+}
+
+.image img:hover {
+    transform: translateY(-10px);
+
 }
 .content-img_w1 {
     grid-area: w1;
@@ -207,6 +213,18 @@ img {
     @media (max-width:700px) {
         .wrapper {
         grid-template-columns: 30% 70%;
+        }
+        li a {
+            font-size: 12px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .logo a img {
+            width: 100%;
+        }
+        .logo {
+            margin: 51px 0px 57px 0px;
         }
     }
 
